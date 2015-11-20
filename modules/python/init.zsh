@@ -34,6 +34,12 @@ if (( ! $+commands[python] && ! $+commands[pyenv] )); then
   return 1
 fi
 
+### Axl's mod
+# Enable pyenv-virtualenv auto-activation
+if which pyenv-virtualenv-init > /dev/null; then
+  eval "$(pyenv virtualenv-init -)"
+fi
+
 # Load virtualenvwrapper into the shell session.
 if (( $+commands[virtualenvwrapper.sh] )); then
   # Set the directory where virtual environments are stored.
