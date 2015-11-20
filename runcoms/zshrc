@@ -11,4 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-export HOMEBREW_GITHUB_API_TOKEN=cefc8ec3e1122846692076feba91d54c39aedc5b
+
+### Set the github token for homebrew
+# export HOMEBREW_GITHUB_API_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
