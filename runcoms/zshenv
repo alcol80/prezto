@@ -9,3 +9,10 @@
 if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+### Source homebrew specific config, if any
+BREW_CONFIG_FILE="${ZDOTDIR:-$HOME}/.brew.zsh"
+if [[ -s $BREW_CONFIG_FILE ]]; then
+  source $BREW_CONFIG_FILE
+fi
+unset BREW_CONFIG_FILE
