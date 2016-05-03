@@ -16,3 +16,7 @@ if [[ -s $BREW_CONFIG_FILE ]]; then
   source $BREW_CONFIG_FILE
 fi
 unset BREW_CONFIG_FILE
+
+### From brew info nvm
+export NVM_DIR=~/.nvm
+# sourcing nvm.sh is handled with zprezto node module
